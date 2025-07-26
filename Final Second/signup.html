@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+   
+<!--
+Student Name: Fredrick Reid
+File Name: GridlineUnitedfinaltemplate.html
+Date:  "06/11/25"
+
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gridline United Railway | Sign Up</title>
+                
+                <!-- Link to external CSS file -->
+            <link rel="stylesheet" href="styles/style.css">  
+
+                <!-- Favicon links -->
+                <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/android-chrome-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+                <link rel="manifest" href="images/favicon/site.webmanifest">
+
+                    <!-- Link to embedded fonts -->
+                     <!-- Zen Dots, Emblema One, and Lora fonts -->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Zen+Dots&display=swap" rel="stylesheet">
+                    
+                     <!-- Agdasima font -->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Zen+Dots&display=swap" rel="stylesheet">
+
+                </head>
+
+    <body>
+
+        <header class="header">
+            <div class="header-flex">
+            <img src="images/logo.jpg" alt="Grindline United Logo" class="logo">
+            <h1>Gridline United Railway</h1>
+
+                <nav class="mobile-nav">
+                    <a class="menu-icon" onclick="hamburger()">
+                        <div>&#9776</div>
+                    </a>
+            </div>
+
+            <!-- Mobile navigation for smaller screens -->
+        <div class="menu-links" id="nav-toggle">
+            <!-- Logo -->
+            <div class="logo-container">
+            <img src="images/logo.jpg" alt="Gridline United Logo" class="logo">
+            </div>
+            <!-- Navigation links -->	
+			<a href="index.html">Home</a>
+			<a href="routes.html">Routes</a>
+			<a href="services.html">Services</a>
+            <a href="signup.html">Sign Up</a>
+			<a href="about.html">About Our Mission</a>
+        </div>
+
+    </nav>
+        </header>
+
+    <!-- Desktop navigation for larger screens -->
+    <nav class="tabdesk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="routes.html">Routes</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="signup.html">Sign Up</a></li>
+			<li><a href="about.html">About Our Mission</a></li>
+		</ul>	
+	</nav>
+
+    <!-- hero image section -->
+    <section class="hero">
+            <audio id="train-audio" src="media/train.mp3"></audio>
+
+        <div class="hero-content">
+            <h2>Gridline United Railway</h2>
+           </div>
+
+           <div class="hero-subtitle">
+            <p>Connecting America with the Future of Underground Transit <br>
+            Welcome, your journey begins here.  Explore our <a href="routes.html">routes</a> and <a href="services.html">services.</a></p>
+        </div>
+    </section>
+
+
+
+    <!-- Main content area -->
+<main>
+    <article>
+        <div class="content content-fade-in" id="signup-content">
+        <img src="images/stock/signup.jpg" alt="Sign Up for Gridpass today and enjoy exclusive benefits!" class="content-image" id="signup-image">
+        <h2>🌐 What Is Gridpass?</h2>
+        <p>
+        Gridpass is your exclusive key to unlocking the full potential of the Gridline transit experience. Whether you're a daily commuter, a cross-country traveler, or a curious explorer looking to experience the future of connected cities, Gridpass gives you more freedom, more perks, and more value.
+        </p>
+
+        <h3>🎟️ Membership Tiers</h3>
+        <h5>Standard Gridpass – $15/month</h5>
+        <p>Ideal for local travelers and urban commuters.</p>
+        <ol>
+            <li>10% off all Gridline travel (intra-city and inter-city)</li>
+            <li>Member pricing at Gridline station cafés and food courts</li>
+            <li>Priority booking access during peak travel times</li>
+            <li>Early access to new Gridline services and announcements</li>
+            <li>Invites to Gridline soft launch events in your region</li>
+            <li>Access to GridPerks: rotating monthly partner discounts for local shops, events, and co-working spaces</li>
+        </ol>
+
+        <h4>Premium Gridpass – $30/month</h4>
+        <p>Perfect for frequent travelers and enthusiasts who want everything the Gridline has to offer.</p>
+        <ol>
+            <li>Includes everything in Standard, plus:</li>
+            <li>25% off all Gridline travel</li>
+            <li>Complimentary upgrades to premium seating when available</li>
+            <li>Free access to Gridline lounges in major stations (with complimentary Wi-Fi, snacks, and workspaces)</li>
+            <li>Express boarding privileges</li>
+            <li>Concierge booking assistance for long-distance trips and group travel</li>
+            <li>Annual bonus vouchers for Gridline-affiliated services (e.g., hotels, transit passes, rental services)</li>
+            <li>Premium-only GridPerks, including exclusive event access, flash travel deals, and curated travel bundles</li>
+        </ol>
+
+        <h3>🚉 Why Join Now?</h3>
+        <p>
+        Gridline is preparing to launch in 25 major U.S. cities — and as a Gridpass early member, you're not just signing up for a service — you're becoming a founding rider of the nation's first hyperconnected, smart transit network. Founding members will receive legacy perks, recognition badges, and locked-in pricing for life.
+        </p>
+
+        <h3>✅ Be Among the First</h3>
+        <p>
+        Spots for founding Gridpass memberships are limited before launch. Claim yours now to shape the future of high-speed, high-efficiency transit — and enjoy exclusive rewards along the way.
+        </p>
+
+        </div>
+
+        <div class="content content-text content-fade-in">
+    <form id="gridpass-form" action="/signup" method="POST">
+  <h2>Join Gridpass</h2>
+  
+  <!-- Textbox for Email -->
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <!-- Radio Buttons for Plan Type -->
+  <p>Choose Your Gridpass Plan:</p>
+  <input type="radio" id="standard" name="plan" value="Standard" checked>
+  <label for="standard">Standard</label><br>
+  <input type="radio" id="premium" name="plan" value="Premium">
+  <label for="premium">Premium</label><br><br>
+
+  <!-- Checkboxes for Perks -->
+  <p>Which benefits are you most excited about?</p>
+  <input type="checkbox" id="dining" name="perks" value="Dining Discounts">
+  <label for="dining">Dining Discounts</label><br>
+  <input type="checkbox" id="travel" name="perks" value="Travel Perks">
+  <label for="travel">Travel Perks</label><br><br>
+
+  <!-- Dropdown Menu with All 25 Cities -->
+  <label for="city">Select Your Home City:</label><br>
+  <select id="city" name="city" required>
+    <option value="">--Choose One--</option>
+    <option value="newyork">New York, NY</option>
+    <option value="chicago">Chicago, IL</option>
+    <option value="losangeles">Los Angeles, CA</option>
+    <option value="houston">Houston, TX</option>
+    <option value="philadelphia">Philadelphia, PA</option>
+    <option value="atlanta">Atlanta, GA</option>
+    <option value="miami">Miami, FL</option>
+    <option value="dallas">Dallas, TX</option>
+    <option value="washingtondc">Washington, D.C.</option>
+    <option value="boston">Boston, MA</option>
+    <option value="denver">Denver, CO</option>
+    <option value="seattle">Seattle, WA</option>
+    <option value="phoenix">Phoenix, AZ</option>
+    <option value="detroit">Detroit, MI</option>
+    <option value="minneapolis">Minneapolis, MN</option>
+    <option value="charlotte">Charlotte, NC</option>
+    <option value="sanfrancisco">San Francisco, CA</option>
+    <option value="portland">Portland, OR</option>
+    <option value="orlando">Orlando, FL</option>
+    <option value="nashville">Nashville, TN</option>
+    <option value="sanantonio">San Antonio, TX</option>
+    <option value="columbus">Columbus, OH</option>
+    <option value="indianapolis">Indianapolis, IN</option>
+    <option value="kansascity">Kansas City, MO</option>
+    <option value="lasvegas">Las Vegas, NV</option>
+  </select><br><br>
+
+  <!-- Submit Button -->
+  <button type="submit">Sign Up Now</button>
+</form>
+
+</div>
+
+    </article>
+</main>
+        
+	<footer>
+        <div class="footer-content">
+
+            <hr>
+
+        <p>Gridline United &copy; 2025 | All Rights Reserved | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+		<p>For inquiries, please contact us at: <a href="mailto:contact@gridlineunited.org">contact@gridlineunited.org</a></p>
+        </div>
+
+		<div>
+        <p>Follow us on social media: </p>
+        </div>
+
+        <div class="social-links">
+			<a href="https://www.facebook.com/GridlineUnited" target="_blank"><img src="images/social/facebookcon.png"></a> | 
+			<a href="https://www.twitter.com/GridlineUnited" target="_blank"><img src="images/social/twittercon.png"></a> | 
+			<a href="https://www.instagram.com/GridlineUnited" target="_blank"><img src="images/social/instagramcon.png"></a> 
+        </div>
+	</footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

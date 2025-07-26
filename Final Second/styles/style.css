@@ -1,0 +1,819 @@
+/* 
+
+Student Name: Fredrick Reid
+File Name: style.css
+Date: 07/23/2025
+
+*/
+
+/* General Styles */
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    text-shadow: #000000 0 0 5px; /* Dark Blue Future tech theme */
+    color: white; /* Ensure the links are visible */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    text-decoration-color: #1b27d4; /* Dark Blue Future tech theme */
+    text-shadow: 0 0 5px #1b27d4; /* Dark Blue Future tech theme */
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #1f749b;
+  margin: 1em 0;
+  display: block;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body, header, nav, main, footer, h1, div, img {
+margin: 0;   /* Reset margin for all elements */
+padding: 0;  /* Reset padding for all elements */
+border: 0;  /* Reset border for all elements */
+box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+  margin: 0;
+  padding: 0; /* Reset padding for body */
+  width: 100%; /* Full width for body */
+  font-family: "Agdasima",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fffffb;
+  background: linear-gradient(to bottom, #1b27d4 0%, #333 100%); /* Gradient background for footer */
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-size: 100% 100%; /* Stretches gradient to fill the footer */
+  min-height: 100vh; /* Ensures body covers full viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+    width: 100%;
+    flex: 1 0 auto; /* This makes main take up all available space */
+}
+
+footer {
+    flex-shrink: 0; /* Footer stays at the bottom */
+}
+
+footer {
+    width: 100%; /* Full width for footer */
+    color: white; /* White text color for contrast */
+    padding: 10px; /* Add padding for spacing */
+    text-align: center; /* Center align footer text */
+    background: none; /* Ensures footer is transparent and shows the body gradient */
+}
+
+
+
+div.footer-content a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Ensure the links are visible */
+}
+
+div.footer-content a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    text-decoration-color: #1f749b; /* Dark Blue Future tech theme */
+    text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+}
+
+img.content-image {
+    width: 40%; /* Set a fixed width for content images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center align images */
+    display: block; /* Ensure images are displayed as block elements */
+    float: left; /* Float images to the left */
+    border-radius: 12%;
+    padding: .5em; /* Add padding around images */
+}
+
+article {
+    display : flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align content */
+}
+
+div.content {
+    max-width: 80%; /* Set a maximum width for content */
+    padding: 1em; /* Add padding for spacing */
+    background-color: rgba(51, 51, 51, 0.95); /* Semi-transparent dark background */
+    border-radius: 10px; /* Rounded corners for content box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin: .5em auto; /* Center align content with margin */
+    display: inline; /* Use inline display for content */
+}
+
+div.content h2, div.content p, div.content a, div.content ul, div.content li {
+    font-family: "Agdasima",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a cursive font for content */
+    color: #fffffb; /* White text color for contrast */
+    margin: 1em 0; /* Add margin for spacing */
+}
+
+/* Social Media links  Styles */
+
+div.social-links img {
+    width: 30px; /* Set a fixed width for social media icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Add margin between icons */
+}
+
+/* Hide the tablet and desktop content by default */
+
+.tabdesk, #menu-links, #nav-toggle {
+    display: none; /* Hide the tabdesk class by default */
+}
+
+img#signup-image {
+    width: 40%; /* Full width for signup image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 2em; /* Add space below the image */
+    display: block; /* Ensure image is displayed as a block element */
+    border-radius: 12%; /* Rounded corners for the signup image */
+    padding: 2em; /* Add padding around the image */
+}
+
+.content ol {
+  margin-left: 2em; /* Add space above the ordered list */
+}
+
+div#signup-content p {
+    margin: 0 0 0 2em; /* Reset margin for paragraphs */
+    padding: 0; /* Reset padding for paragraphs */
+    font-family: "Agdasima",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a cursive font for content */
+
+}
+
+
+/* style rules for navigation bar */
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2em; /* Set a base font size for navigation links */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #1f749b; /* Dark Blue Future tech theme */
+    text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+}
+
+nav a.menu-icon {
+    display: block; /* Ensure the menu icon is block-level for better clickability */
+    float: right;
+    font-size: 1.5em; /* Increase size for better visibility */
+    color: white; /* Ensure the icon is visible */
+    text-decoration: none; /* Remove underline from the icon */
+    padding: 10px; /* Add padding for better click area */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    z-index: 1000; /* Ensure it appears above other elements */
+    position: relative; /* Position relative for better control */
+}
+
+nav .mobile-nav {
+    float: right; /* Float mobile navigation to the right */
+    display: block; /* Ensure mobile navigation is displayed as a block */
+    background-color: #333; /* Dark background for mobile navigation */
+    position: fixed; /* Fix position to the top right */
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Set a fixed width for the mobile navigation */
+    z-index: 100; /* Ensure it appears above other elements */
+}
+
+div.menu-links {
+    display: flex; /* Use flexbox for horizontal layout */
+    background-color: #333; /* Dark background for navigation */
+    padding: 10px; /* Add padding for spacing */
+    position: fixed; /* Fix position to the top left */
+    top: 0; /* Position at the top */
+    left: 0; /* Anchor to the left */
+    right: auto;
+    width: 100vw; /* Full viewport width for mobile sidebar */
+    max-width: 100%;
+    height: 100vh;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.4);
+    z-index: 100;
+    flex-direction: column;
+    padding-top: 60px;     /* Space for the menu icon */
+    overflow-y: auto; /* Allow vertical scrolling inside sidebar */
+}
+
+div.menu-links a {
+    color: white; /* Ensure text is visible */
+    text-decoration: none; /* Remove underline from links */
+    padding: 20px; /* Add padding for better click area */
+    align-items: center; /* Center items vertically */
+    display: block; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+    border-bottom: 1px solid; /* Add a bottom border for hover effect */
+    font-size: 3em; /* Set a base font size for navigation links */
+    margin: 2%; /* Add margin for spacing */
+    border-radius: 18px; /* Rounded edges */
+    background: linear-gradient(
+        to bottom,
+        rgba(60, 120, 220, 0.18) 0%,
+        rgba(51, 51, 51, 0.95) 60%,
+        rgba(30, 30, 30, 1) 100%
+    ); /* Subtle sheen effect */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border: 1px solid #222;
+    transition: background 0.3s box-shadow 0.3s transform 0.15s;
+    }
+
+div.menu-links a:first-of-type {
+    margin-top: .5em; /* Increase as needed */
+}
+
+div.menu-links a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    text-decoration-color: #1f749b; /* Dark Blue Future tech theme */
+    text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+}
+
+div.logo-container {
+    position: relative; /* Fix position to the top left */
+    z-index: 100; /* Ensure it appears above other elements */
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    margin-top: -40px; /* Adjust margin to align with header */
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+/* Show menu when toggled */
+.mobile-menu.show {
+    display: flex;
+}
+
+/* Style Rules for Header */
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width for header */
+    padding: 0; /* Add padding to the header */    
+    background-color: #333; /* Dark background for header */
+    font-family: "Zen Dots",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Use a cursive font for the hero content */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+.logo {
+    width: 50px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Add margin to the right of the logo */
+    padding-left: 2%; /* Add padding to the left of the logo */
+}
+
+.header-flex h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 2%; /* Add margin to the right of the menu icon */
+}
+
+/* Style Rules for Mobile */
+
+header, nav, main, footer {
+    display: block; /* Ensure these elements are displayed as blocks */
+}
+
+header {
+    text-align: center; /* Center align header text */
+    width: 100%; /* Full width for header */  
+    padding: 0px; /* Add padding for spacing */
+}
+
+header img {
+    float: left; /* Float logo to the left */
+    width: 50px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+    
+header h1 {
+    font-size: 1.5em; /* Set a larger font size for the header */
+    color: #fffffb; /* White text color for contrast */
+    margin-left: 5%; /* Add margin to avoid overlap with logo */
+}
+
+
+
+/* Style Rules for hero section */
+
+.hero {        
+    background-image: url("../images/hero.png"); /* Use a hero image for tablet */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%; /* Center the image */
+    height: 40vh; /* Set height to 40vh for desktop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Position relative for absolute positioning of content */
+}
+
+div.hero-content p {
+  margin: 0;
+  padding: 0;
+  font-family:  "Agdasima",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.hero-content h2 {        
+    text-decoration: underline; /* Underline the hero heading */
+    text-decoration-color: #ffffff; /* Dark Blue Future tech theme */
+    font-family: "Zen Dots",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Use a cursive font for the hero content */
+    font-size: 2.5em; /* Set a larger font size for the hero heading */
+    margin-bottom: 1rem; /* Add margin below the heading */
+    text-align: center;
+}
+
+/* Animation for hero-content and hero-subtitle sliding in from the left */
+.hero-content {
+  transform: translateX(-100vw);
+  opacity: 0;
+  transition: transform 1s cubic-bezier(0.77,0,0.175,1), opacity 1s;
+  position: absolute; /* Position absolute for hero content */
+  left: 50%; /* Center horizontally */
+  top: 2em; /* Center vertically */
+
+}
+
+.hero-content.animate-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Animation for hero-subtitle sliding in from the right */
+
+.hero-subtitle {
+  transform: translateX(100vw);
+  opacity: 0;
+  transition: transform 1s cubic-bezier(0.77,0,0.175,1), opacity 1s;
+    position: absolute; /* Position absolute for hero subtitle */
+    right: 10%; /* Center horizontally */
+    top: 65%; /* Center vertically */
+}
+
+.hero-subtitle.animate-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Animation for div.content fade-in and slide-up */
+.content-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.77,0,0.175,1), transform 0.7s cubic-bezier(0.77,0,0.175,1);
+}
+
+.content-fade-in.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Style Rules for Tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+    /* Navigation Button Styling for Tablet */  
+
+     nav.tabdesk ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav.tabdesk ul li {
+        color: white;
+        padding: 0;
+        margin: 0; /* Remove margin for no gap between buttons */
+        border-radius: 0; /* Remove rounded corners for square buttons */
+        background: linear-gradient(
+            to bottom,
+            #888 0%,   /* Mild/medium grey */
+            #333 100%  /* Site's dark grey */
+        );
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        border: 1px solid #222;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.15s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    nav.tabdesk ul li::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 60%;
+        background: #1f749b; /* Accent blue from site */
+        position: absolute;
+        left: 0;
+        top: 20%;
+        border-radius: 1px;
+    }
+
+    nav.tabdesk ul li:first-child::before {
+        display: none; /* Remove left border for first button */
+    }
+
+    nav.tabdesk ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 0;
+        font-size: 1.5em;
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        transition: none;
+        position: relative;
+        text-align: center;
+    }
+
+    nav.tabdesk ul li a::after {
+        display: none; /* Remove right border effect from link */
+    }
+
+    nav.tabdesk ul li:hover {
+        background: linear-gradient(
+            to bottom,
+            rgba(80, 160, 255, 0.25) 0%,
+            #1f749b 80%,
+            #174a6a 100%
+        );
+        box-shadow: 0 4px 16px rgba(31,116,155,0.18);
+        transform: translateY(-2px) scale(1.03);
+    }
+
+
+    /* General Styles tablet devices */
+
+    header {
+        display: none; /* Hide header on tablet devices */
+    }
+   
+    nav {
+        background-color: #333; /* Dark background for desktop navigation */
+        padding: .5em 1.5em .5em 1.5em; /* Add padding for spacing */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        padding: .5em; /* Increase padding for better touch targets */
+        justify-items: auto; /* Center the navigation items */
+    }
+    
+    nav.tabdesk {
+        width: 100%;
+        padding: 0; /* Remove padding for full-width navigation */
+        background-color: none; /* Ensure no background color */
+    }
+    
+    nav.tabdesk ul {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to next line */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+       background-color: none; /* Remove background for tablet navigation */
+    }
+
+    nav.tabdesk ul li {
+        flex: 1 1 0; /* Allow items to grow and shrink */
+        display: flex; /* Use flexbox for horizontal layout */
+        text-align: center;
+        align-items: center; /* Center items vertically */
+        margin: 0;
+        padding: 0; /* Remove padding for no gap between buttons */
+    }
+
+    nav.tabdesk ul li a {
+        display: block;
+        width: 100%;
+        padding: 1em 0;
+        min-width: 80px; /* Set a minimum width for each link */
+        font-size: 1em; /* Set a base font size for tablet */
+    }
+
+  
+
+    .tabdesk {
+        display: block; /* Show the tabdesk class for tablet devices */
+    }
+
+    .mobile, .mobile-nav {
+        display: none; /* Hide mobile navigation on tablet devices */
+    }
+
+    section.hero {
+        background-image: url("../images/hero.png"); /* Use a hero image for tablet */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 75%; /* Center the image */
+        height: 40vh; /* Set height to 40vh for desktop */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; /* Position relative for absolute positioning of content */
+    }
+
+    section.hero p {
+        font-family:  "Agdasima",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    div.hero-content h2 {
+        text-decoration: underline; /* Underline the hero heading */
+        text-decoration-color: #ffffff; /* Dark Blue Future tech theme */
+        font-family: "Zen Dots",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Use a cursive font for the hero content */
+        font-size: 2.5em; /* Set a larger font size for the hero heading */
+        margin-bottom: 1rem; /* Add margin below the heading */
+        text-align: center;
+    } 
+
+
+    nav ul li {
+        display: inline-block; /* Display navigation items inline */
+        margin: .5em; /* Add margin between items */
+        list-style-type: none; /* Remove default bullets */
+        justify-content: center; /* Center the navigation items */
+              }
+        nav ul li::before {
+            content: "⚡"; /* Use lightning bolt symbol as bullet */
+            margin-right: .5em; /* Add space between bullet and text */
+            color: #1f749b;
+            align-self: center; /* Center the bullet vertically */
+    }
+
+
+
+/* Style Rules for tablet footer */
+
+div.footer-content a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Ensure the links are visible */
+}
+
+div.footer-content a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    text-decoration-color: #1f749b; /* Dark Blue Future tech theme */
+    text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+}
+
+}
+
+
+
+
+/* Style Rules for Desktop */
+
+@media (min-width: 1025px) {
+
+/* Navigation Button Styling for Desktop */
+
+    nav.tabdesk ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav.tabdesk ul li {
+        color: white;
+        padding: 0;
+        margin: 0; /* Remove margin for no gap between buttons */
+        border-radius: 0; /* Remove rounded corners for square buttons */
+        background: linear-gradient(
+            to bottom,
+            #888 0%,   /* Mild/medium grey */
+            #333 100%  /* Site's dark grey */
+        );
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        border: 1px solid #222;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.15s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    nav.tabdesk ul li::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 60%;
+        background: #1f749b; /* Accent blue from site */
+        position: absolute;
+        left: 0;
+        top: 20%;
+        border-radius: 1px;
+    }
+
+    nav.tabdesk ul li:first-child::before {
+        display: none; /* Remove left border for first button */
+    }
+
+    nav.tabdesk ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 0;
+        font-size: 1.5em;
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        transition: none;
+        position: relative;
+        text-align: center;
+    }
+
+    nav.tabdesk ul li a::after {
+        display: none; /* Remove right border effect from link */
+    }
+
+    nav.tabdesk ul li:hover {
+        background: linear-gradient(
+            to bottom,
+            rgba(80, 160, 255, 0.25) 0%,
+            #1f749b 80%,
+            #174a6a 100%
+        );
+        box-shadow: 0 4px 16px rgba(31,116,155,0.18);
+        transform: translateY(-2px) scale(1.03);
+    }
+
+
+
+
+    /* General Styles desktop devices */
+
+    header {
+        display: none; /* Hide header on tablet devices */
+    }
+
+     nav ul li {
+        display: flex; /* Display navigation items inline */
+        margin: .5em; /* Add margin between items */
+        list-style-type: none; /* Remove default bullets */
+    }
+        
+        nav ul li::before {
+            content: "⚡"; /* Use lightning bolt symbol as bullet */
+            margin-right: 1%; /* Add space between bullet and text */
+            color: #1f749b;
+    }
+
+    nav {
+        background-color: #333; /* Dark background for desktop navigation */
+        padding: .5em 1.5em .5em 1.5em; /* Add padding for spacing */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav.tabdesk {
+        width: 100%;
+        padding: 0; /* Remove padding for full-width navigation */
+        background-color: none; /* Ensure no background color */
+    }
+
+    nav.tabdesk ul {
+        display: flex;
+        flex-direction: row; /* Use row direction for horizontal layout */
+        width: 100%;
+        padding: 0;
+        margin: 0%; /* Add margin for spacing */
+    }
+
+    nav.tabdesk ul li {
+        flex: 1 1 0;
+        display: flex; /* Use flexbox for horizontal layout */
+        text-align: center;
+        margin: 0;
+        align-items: center;
+    }
+
+    nav.tabdesk ul li a {
+        display: block;
+        width: 100%;
+        padding: 1em 0;
+    }
+
+
+
+
+    /* style rules for desktop hero section */
+
+    section.hero {
+        background-image: url("../images/hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; /* Center the image */
+        height: 60vh; /* Set height to 40vh for desktop */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.hero-content {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Use a cursive font for the hero content */
+        text-align: center; /* Center align the hero content */
+        color: #fffffb; /* White text color for contrast */
+        position: absolute; /* Position absolute for better control */
+        top: 10rem; /* Distance from the top */
+        left: 9rem; /* Distance from the left */
+    }
+
+    div.hero-subtitle {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Use a cursive font for the hero content */
+        text-align: center; /* Center align the hero content */
+        color: #fffffb; /* White text color for contrast */
+        position: absolute; /* Position absolute for better control */
+        bottom: 2rem; /* Distance from the bottom */
+        right: 2rem;  /* Distance from the right */
+        font-size: 1.5em; /* Set a larger font size for the hero subtitle */
+        text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+    }
+
+    section.hero p {
+        font-family:  "Agdasima",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    div.hero-content h2 {
+        text-decoration: underline; /* Underline the hero heading */
+        text-decoration-color: #ffffff; /* Dark Blue Future tech theme */
+        font-family: "Zen Dots",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Use a cursive font for the hero content */
+        font-size: 2.5em; /* Set a larger font size for the hero heading */
+        margin-bottom: 1rem; /* Add margin below the heading */
+    } 
+
+    nav li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #1f749b; /* Dark Blue Future tech theme */
+        text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+        transform: scale(1.05); /* Slightly enlarge the link on hover */
+    }
+
+    .tabdesk {
+        display: block; /* Show the tabdesk class for deskstop devices */
+    }
+
+    .mobile, .mobile-nav {
+        display: none; /* Hide mobile navigation on tablet devices */
+    }
+
+
+
+
+ /* Style Rules for desktop footer */
+
+div.footer-content a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Ensure the links are visible */
+}
+
+div.footer-content a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    text-decoration-color: #1f749b; /* Dark Blue Future tech theme */
+    text-shadow: 0 0 5px #1f749b; /* Dark Blue Future tech theme */
+}
+
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+   
+<!--
+Student Name: Fredrick Reid
+File Name: GridlineUnitedfinaltemplate.html
+Date:  "06/11/25"
+
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gridline United Railway | Template</title>
+                
+                <!-- Link to external CSS file -->
+            <link rel="stylesheet" href="styles/style.css">  
+
+                <!-- Favicon links -->
+                <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/android-chrome-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+                <link rel="manifest" href="images/favicon/site.webmanifest">
+
+                    <!-- Link to embedded fonts -->
+                     <!-- Zen Dots, Emblema One, and Lora fonts -->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Zen+Dots&display=swap" rel="stylesheet">
+                    
+                     <!-- Agdasima font -->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Zen+Dots&display=swap" rel="stylesheet">
+
+                </head>
+
+    <body>
+
+        <header class="header">
+            <div class="header-flex">
+            <img src="images/logo.jpg" alt="Grindline United Logo" class="logo">
+            <h1>Gridline United Railway</h1>
+
+                <nav class="mobile-nav">
+                    <a class="menu-icon" onclick="hamburger()">
+                        <div>&#9776</div>
+                    </a>
+            </div>
+
+            <!-- Mobile navigation for smaller screens -->
+        <div class="menu-links" id="nav-toggle">
+            <!-- Logo -->
+            <div class="logo-container">
+            <img src="images/logo.jpg" alt="Gridline United Logo" class="logo">
+            </div>
+            <!-- Navigation links -->	
+			<a href="index.html">Home</a>
+			<a href="routes.html">Routes</a>
+			<a href="services.html">Services</a>
+			<a href="signup.html">Sign Up</a>
+			<a href="about.html">About Our Mission</a>
+        </div>
+
+    </nav>
+        </header>
+
+    <!-- Desktop navigation for larger screens -->
+    <nav class="tabdesk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="routes.html">Routes</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="signup.html">Sign Up</a></li>
+			<li><a href="about.html">About Our Mission</a></li>
+		</ul>	
+	</nav>
+
+    <!-- hero image section -->
+    <section class="hero">
+            <audio id="train-audio" src="media/train.mp3"></audio>
+
+        <div class="hero-content">
+            <h2>Gridline United Railway</h2>
+           </div>
+
+           <div class="hero-subtitle">
+            <p>Connecting America with the Future of Underground Transit <br>
+            Welcome, your journey begins here.  Explore our <a href="routes.html">routes</a> and <a href="services.html">services.</a></p>
+        </div>
+    </section>
+
+
+    <!-- Main content area -->
+<main>
+    <article>
+        <div class="content">
+            <h1>Gridline United Railway Services</h1>
+            <p>Welcome to Gridline United Railway, where we are revolutionizing transportation with our innovative underground transit solutions. Our services are designed to connect cities, enhance energy efficiency, and provide sustainable travel options for all.</p>
+        </div>
+
+    <div class="content" id="table">
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Stage</th>
+      <th>Station Name</th>
+      <th>Connected Cities</th>
+      <th>Est. Travel Time</th>
+      <th>Approval Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>New York</td><td>Under Construction</td><td>Hudson Terminal</td><td>Philadelphia, Boston, Washington D.C.</td><td>40–75 min</td><td>Approved</td></tr>
+    <tr><td>Chicago</td><td>Development</td><td>Lakeside Station</td><td>Indianapolis, Columbus, Detroit</td><td>35–90 min</td><td>In Review</td></tr>
+    <tr><td>Los Angeles</td><td>Planning</td><td>Union Grid Station</td><td>San Diego, San Jose, Phoenix</td><td>45–120 min</td><td>Pending</td></tr>
+    <tr><td>Houston</td><td>Development</td><td>Bayou Junction</td><td>Dallas, San Antonio, Austin</td><td>30–80 min</td><td>In Review</td></tr>
+    <tr><td>Philadelphia</td><td>Under Construction</td><td>Liberty Platform</td><td>New York, D.C., Boston</td><td>25–60 min</td><td>Approved</td></tr>
+    <tr><td>Phoenix</td><td>Planning</td><td>Desertgate Hub</td><td>Los Angeles, San Diego</td><td>60–90 min</td><td>Pending</td></tr>
+    <tr><td>San Antonio</td><td>Planning</td><td>Mission Loop</td><td>Houston, Austin</td><td>35–45 min</td><td>Pending</td></tr>
+    <tr><td>San Diego</td><td>Development</td><td>Pacific Gridpoint</td><td>Los Angeles, Phoenix</td><td>50–70 min</td><td>In Review</td></tr>
+    <tr><td>Dallas</td><td>Development</td><td>Lone Star Station</td><td>Houston, Fort Worth</td><td>25–55 min</td><td>In Review</td></tr>
+    <tr><td>San Jose</td><td>Planning</td><td>Silicon Platform</td><td>Los Angeles, San Francisco</td><td>40–75 min</td><td>Pending</td></tr>
+    <tr><td>Austin</td><td>Under Construction</td><td>Capital Terminal</td><td>Houston, San Antonio</td><td>30–50 min</td><td>Approved</td></tr>
+    <tr><td>Jacksonville</td><td>Planning</td><td>Coastal Connector</td><td>Charlotte, Atlanta</td><td>50–95 min</td><td>Pending</td></tr>
+    <tr><td>Fort Worth</td><td>Planning</td><td>Western Spur</td><td>Dallas, Austin</td><td>25–60 min</td><td>Pending</td></tr>
+    <tr><td>Columbus</td><td>Development</td><td>Heartline Hub</td><td>Indianapolis, Pittsburgh</td><td>45–75 min</td><td>In Review</td></tr>
+    <tr><td>Charlotte</td><td>Under Construction</td><td>Uptown Junction</td><td>Atlanta, Jacksonville</td><td>50–85 min</td><td>Approved</td></tr>
+    <tr><td>San Francisco</td><td>Planning</td><td>Bayline Terminal</td><td>San Jose, Sacramento</td><td>25–60 min</td><td>Pending</td></tr>
+    <tr><td>Indianapolis</td><td>Development</td><td>Circle Line Stop</td><td>Chicago, Columbus</td><td>40–65 min</td><td>In Review</td></tr>
+    <tr><td>Seattle</td><td>Planning</td><td>Emerald Station</td><td>Portland, San Francisco</td><td>75–150 min</td><td>Pending</td></tr>
+    <tr><td>Denver</td><td>Development</td><td>Front Range Terminal</td><td>Salt Lake City, Dallas</td><td>90–120 min</td><td>In Review</td></tr>
+    <tr><td>Washington, D.C.</td><td>Under Construction</td><td>Capitol Nexus</td><td>New York, Philadelphia</td><td>30–65 min</td><td>Approved</td></tr>
+    <tr><td>Boston</td><td>Planning</td><td>Harborline Station</td><td>New York, Philadelphia</td><td>60–75 min</td><td>Pending</td></tr>
+    <tr><td>El Paso</td><td>Planning</td><td>Borderlink Station</td><td>Phoenix, San Antonio</td><td>90–120 min</td><td>Pending</td></tr>
+    <tr><td>Detroit</td><td>Development</td><td>Motor City Grid</td><td>Chicago, Columbus</td><td>60–85 min</td><td>In Review</td></tr>
+    <tr><td>Nashville</td><td>Under Construction</td><td>Music City Terminal</td><td>Charlotte, Indianapolis</td><td>50–80 min</td><td>Approved</td></tr>
+    <tr><td>Memphis</td><td>Planning</td><td>Riverpoint Platform</td><td>Dallas, Nashville</td><td>45–70 min</td><td>Pending</td></tr>
+  </tbody>
+</table>
+        
+    </div>
+</article>
+</main>
+        
+	<footer>
+        <div class="footer-content">
+
+            <hr>
+
+        <p>Gridline United &copy; 2025 | All Rights Reserved | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+		<p>For inquiries, please contact us at: <a href="mailto:contact@gridlineunited.org">contact@gridlineunited.org</a></p>
+        </div>
+
+		<div>
+        <p>Follow us on social media: </p>
+        </div>
+
+        <div class="social-links">
+			<a href="https://www.facebook.com/GridlineUnited" target="_blank"><img src="images/social/facebookcon.png"></a> | 
+			<a href="https://www.twitter.com/GridlineUnited" target="_blank"><img src="images/social/twittercon.png"></a> | 
+			<a href="https://www.instagram.com/GridlineUnited" target="_blank"><img src="images/social/instagramcon.png"></a> 
+        </div>
+	</footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
